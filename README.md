@@ -22,8 +22,8 @@ the pod executing pmml.
 
 First create the secrets:
 ```
-$ kubectl create secret generic pmml-pmmlrc --from-file /Users/michaelwilson/.pmmlrc -n pmml
-$ kubectl create secret generic pmml-fetchmailrc --from-file /Users/michaelwilson/.fetchmailrc -n pmml
+$ kubectl create secret generic pmml-pmmlrc --from-file example_configs/pmmlrc -n pmml
+$ kubectl create secret generic pmml-fetchmailrc --from-file example_configs/fetchmailrc -n pmml
 ```
 
 Afterwards create the deployment:
