@@ -1,0 +1,10 @@
+{
+    "mailinglist@example.org": {
+        "recipients": ["user1@example.org", "user2@example.org" ],
+        "smtp_server": "smtp.example.org",
+        "smtp_port": 587,
+        "connection": "STARTTLS",
+        "smtp_user": "mailinglist@example.org",
+        "smtp_pass": "PASSWORD"
+    }
+}
