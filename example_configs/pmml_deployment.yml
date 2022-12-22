@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: pmml
-        image: torarg/pmml:0.1.5
+        image: torarg/pmml:0.1.6
         volumeMounts:
         - mountPath: "/.pmmlrc"
           subPath: ".pmmlrc"
