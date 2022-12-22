@@ -34,7 +34,7 @@ def cli(config_file, mailing_list_address):
     msg = email.parser.Parser().parse(input)
 
     if msg["Subject"] in ignore_subjects:
-        print(f"Skipping processing because auf subject: {msg['Subject']}")
+        print(f"Skipping processing because of subject: {msg['Subject']}")
     else:
         smtp_client = setup_smtp_session(
             config["smtp_server"],
