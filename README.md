@@ -20,7 +20,12 @@ docker run -v $(pwd)/example_configs/fetchmailrc:/.fetchmailrc -v $(pwd)/example
 If using kubernetes the configuration files should be injected as secret into
 the pod executing pmml.
 
-First create the secrets:
+Create a namespace:
+```sh
+kubectl create ns pmml
+```
+
+Create secrets containing the configuration:
 ```sh
 kubectl create secret generic pmml-pmmlrc --from-file example_configs/pmmlrc -n pmml
 ```
