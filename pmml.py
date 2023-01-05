@@ -43,7 +43,7 @@ def cli(config_file, mailing_list_address):
             config["smtp_pass"],
         )
         smtp_client.sendmail(
-            mailing_list_address, config["recipients"], msg.as_string()
+            mailing_list_address, config["recipients"], msg.as_string().encode('utf-8')
         )
         smtp_client.quit()
 
